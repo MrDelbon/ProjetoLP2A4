@@ -12,7 +12,7 @@ public class UsersController {
     @Autowired
     private UsersRepository repository;
 
-    @GetMapping
+    @GetMapping("/todos")
     public ResponseEntity getAllUsers() {
         var allUsers = repository.findAllByActiveTrue();
         return ResponseEntity.ok(allUsers);
@@ -31,6 +31,31 @@ public class UsersController {
     @GetMapping("/trabalhoso")
     public ResponseEntity getLaboriousUsers() {
         var allUsers = repository.findAllByType("laborious");
+        return ResponseEntity.ok(allUsers);
+    }
+    @GetMapping("/norte")
+    public ResponseEntity getNorteUsers() {
+        var allUsers = repository.findAllByLocationRegion("norte");
+        return ResponseEntity.ok(allUsers);
+    }
+    @GetMapping("/nordeste")
+    public ResponseEntity getNordesteUsers() {
+        var allUsers = repository.findAllByLocationRegion("nordeste");
+        return ResponseEntity.ok(allUsers);
+    }
+    @GetMapping("/centro-oeste")
+    public ResponseEntity getCentroUsers() {
+        var allUsers = repository.findAllByLocationRegion("centro-oeste");
+        return ResponseEntity.ok(allUsers);
+    }
+    @GetMapping("/sudeste")
+    public ResponseEntity getSudesteUsers() {
+        var allUsers = repository.findAllByLocationRegion("sudeste");
+        return ResponseEntity.ok(allUsers);
+    }
+    @GetMapping("/sul")
+    public ResponseEntity getSulUsers() {
+        var allUsers = repository.findAllByLocationRegion("sul");
         return ResponseEntity.ok(allUsers);
     }
 }
