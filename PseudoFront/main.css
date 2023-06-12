@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    vertical-align: top;
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+    display: flex;
+    margin-right: 10%;
+    justify-content: space-around;
+    height: 10%;
+}
+
+.classeInicial {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    border: solid black 5px;
+}
+
+.container {
+    display: flex;
+    margin-top: 3%;
+}
+
+.FiltroPai{
+    flex-flow: column wrap;
+}
+
+.Filter {
+    width: 20em;
+    height: max-content;
+    overflow: hidden;
+    padding-left: 10px;
+    background-color: #f4f4f4;
+    margin-bottom: 2%;
+    justify-items: center;
+}
+
+.Filter h1 {
+    font-size: 35px;
+}
+
+.Filter ul {
+    font-size: 25px;
+    list-style: none;
+}
+
+.Filter input {
+    transform: scale(1.5);
+}
+
+.pessoas {
+    flex: 1;
+    margin-left: 2%;
+    display: grid;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    background-color: #f4f4f4;
+}
+
+.pessoa {
+    display: grid;
+    justify-items: center;
+    grid-template-rows: auto auto 1fr;
+    overflow: hidden;
+    background-color: #ededed;
+    padding: 20px;
+    border-radius: 20px;
+}
+.pessoa button{
+    font-size: 12px;
+    height: 370px;
+    width: 250px;
+    margin: 0px 0px;
+    border-color: #ededed;
+}
+.detalhe {
+    background-color: #f4f4f4;
+    height: 600px;
+    width: 300px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin: 50px 800px;
+}
+.botoes{
+    margin: 10px;
+    align-content: center;
+    display: flex;
+    width: 99%;
+    height: max-content;
+    justify-content: center;
+}
+.botoes button{
+    font-size: 32px;
+    height: 70px;
+    width: 70px;
+    margin: 10px 10px;
+}
+.botoes button:hover {
+    background: rgb(165, 164, 158);
+    border-color: rgb(165, 164, 158);
+    }
+footer{
+    margin-top: 2%;
+    display: flex;
+    background-color: #f4f4f4;
+    justify-content: center;
+    align-items: center;
+}
+.pe{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pe img{
+    height: 120px;
+    width: 120px;
+}
